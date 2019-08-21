@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ミュージックプレイヤー</title>
+  <link rel="stylesheet" href="mplayer.css">
+</head>
+
+<body>
+  <div class="appframe">
+
+    <h1>ミュージックプレイヤー</h1>
+    <img src="stop.png" alt="再生状態を表す画像">
+    <audio src="お喋りトーン.mp3" controls>
+
+    </audio>
+    <p>聴きたい曲を選んでね！</p>
+    <ul>
+      <li date-file="お喋りトーン.mp3" class="active">お喋りトーン bgm1</li>
+      <li date-file="Weke me up bgm.mp3">Weke me Up bgm2</li>
+      <li date-file="柴犬の冒険.mp3">柴犬の冒険 bgm3</li>
+
+    </ul>
+    <strong>※音がなるので音量注意！</strong>
+    <script src="mplayer.js" charset="utf-8">
+    </script>
+  </div>
+</body>
+
+</html>
