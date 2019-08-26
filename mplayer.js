@@ -16,3 +16,17 @@ listitems[i].addEventListener('click',
   }
 );
 }
+//再生中と停止中でイラストを切り替える
+var audio = document.querySelector('audio');
+audio.addEventListener('play',
+(e)=>{
+  var img = document.querySelector('img');
+  img.setAttribute('src','stop.png');
+}
+);
+audio.addEventListener('pause',
+(e)=>{
+  var img = document.querySelector('img');
+  img.setAttribute('scr','play.png');
+}
+);
